@@ -190,12 +190,18 @@
     .details button {
       display: none;
     }
-    @container (inline-size < 550px) {
+    @container (inline-size < 600px) {
+      main list-view {
+        max-width: 100%;
+      }
       main[selected] list-view {
         display: none;
       }
       main[selected] .details button {
         display: block;
+      }
+      .empty {
+        display: none;
       }
     }
   `;D([x({type:Object})],w.prototype,"item",2);D([x({type:Array})],w.prototype,"items",2);D([Ht()],w.prototype,"selected",2);D([Ht()],w.prototype,"showList",2);w=D([nt(le)],w);function*gt(s){for(let t=0;t<s;t++)yield{id:t,name:`Item ${t}`}}
