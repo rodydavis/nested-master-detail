@@ -38,12 +38,18 @@ export class MasterDetail extends LitElement {
     .details button {
       display: none;
     }
-    @container (inline-size < 550px) {
+    @container (inline-size < 600px) {
+      main list-view {
+        max-width: 100%;
+      }
       main[selected] list-view {
         display: none;
       }
       main[selected] .details button {
         display: block;
+      }
+      .empty {
+        display: none;
       }
     }
   `;
